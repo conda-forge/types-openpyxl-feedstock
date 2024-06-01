@@ -1,4 +1,4 @@
-{% set version = "3.1.0.20240428" %}
+{% set version = "3.1.2.20240601" %}
 
 package:
   name: types-openpyxl
@@ -6,7 +6,7 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/t/types-openpyxl/types-openpyxl-{{ version }}.tar.gz
-    sha256: 76f5d01fb6ecb495683da957ac4e15b982efbeab772f728a348c6e01ae990e9b
+    sha256: 3b618754e3b9af578a8fa77dc77fcaf4940bc57934a030415cdaa5081662e800
   - url: https://raw.githubusercontent.com/python/typeshed/main/LICENSE
     sha256: 295f8538c94ae5c3043301cf7cff1c852dab6a786a8ddee471e061b40d5ecabe
 
