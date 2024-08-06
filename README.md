@@ -144,5 +144,5 @@ Feedstock Maintainers
 =====================
 
 * [@bollwyvl](https://github.com/bollwyvl/)
-* [@conda-forge/mypy](https://github.com/conda-forge/mypy/)
+* [@conda-forge/mypy](https://github.com/orgs/conda-forge/teams/mypy/)
 
