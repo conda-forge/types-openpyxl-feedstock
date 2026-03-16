@@ -3,11 +3,13 @@ About types-openpyxl-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/types-openpyxl-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/python/typeshed
+Home: https://pypi.org/project/types-openpyxl
 
 Package license: Apache-2.0
 
 Summary: Typing stubs for openpyxl
+
+Development: https://github.com/python/typeshed/tree/main/stubs/openpyxl/openpyxl
 
 Current build status
 ====================
