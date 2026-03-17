@@ -1,0 +1,51 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/prefix-dev/recipe-format/main/schema.json
+schema_version: 1
+
+context:
+  version: 3.1.5.20260316
+
+package:
+  name: types-openpyxl
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/t/types-openpyxl/types_openpyxl-${{ version }}.tar.gz
+  sha256: 081dda9427ea1141e5649e3dcf630e7013a4cf254a5862a7e0a3f53c123b7ceb
+
+build:
+  number: 0
+  noarch: python
+  script:
+    - ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation --disable-pip-version-check
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+
+tests:
+  - package_contents:
+      site_packages:
+        - openpyxl-stubs/__init__.pyi
+  - requirements:
+      run:
+        - mypy
+        - openpyxl
+        - python ${{ python_min }}.*
+    script:
+      - mypy -p openpyxl
+
+about:
+  summary: Typing stubs for openpyxl
+  license: Apache-2.0
+  license_file: LICENSE
+  homepage: https://pypi.org/project/types-openpyxl
+  repository: https://github.com/python/typeshed/tree/main/stubs/openpyxl/openpyxl
+
+extra:
+  recipe-maintainers:
+    - bollwyvl
+    - conda-forge/mypy
