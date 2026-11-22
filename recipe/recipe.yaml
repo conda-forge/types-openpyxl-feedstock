@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "3.1.5.20261017"
+  version: "3.1.5.20261122"
 
 package:
   name: types-openpyxl
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/types-openpyxl/types_openpyxl-${{ version }}.tar.gz
-  sha256: 3deb3b6279b65ab379c126df0ee1fd27500c9628edb8d9667d73f637462917dc
+  sha256: 10b4b572021af793fabd87446594e621fc9a222e6e664b6b1f40fd51f638dee3
 
 build:
   number: 0
